@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Works from './pages/Works';
 import Navbar from './components/Navbar';
-import CaseStudies from './components/CaseStudies';
+import CaseStudies from './components/StudyCases';
 import ThemeContext from './contexts/ThemeContext';
 
 
@@ -14,14 +14,15 @@ const App = () => {
     <ThemeContext.Provider value={{
       darkTheme,
       toggleTheme: () => setDarkTheme(darkTheme => !darkTheme)
-      }}>
+    }}>
 
       <Router>
         <Navbar />
         <Routes>
           <Route path='/' element={ <Home /> } />
-          <Route path='/works/:year' element={ <Works /> } />
-          <Route path='/works/case-studies' element={ <CaseStudies /> } />
+          <Route path='/about' element={ <About /> } />
+          <Route path='/works' element={ <Works /> } />
+          <Route path='/works/study-cases/:client' element={ <CaseStudies /> } />
         </Routes>
       </Router>
 

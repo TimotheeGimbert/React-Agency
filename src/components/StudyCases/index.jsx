@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import ThemeContext from '../../contexts/ThemeContext';
 
-const CaseStudies = () => {
+const StudyCases = () => {
   const theme = useContext(ThemeContext);
 
   useEffect(() => {
@@ -19,4 +19,4 @@ const CaseStudies = () => {
   )
 };
 
-export default CaseStudies;
+export default StudyCases;
