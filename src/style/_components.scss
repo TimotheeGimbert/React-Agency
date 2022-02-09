@@ -1,0 +1,107 @@
+html, img {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+  margin: 0;        
+  padding: 0;         
+  height: 100vh;
+  background-color: black;
+  
+  #root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+header {
+  margin: 0;
+  padding: 3vh 2vw 3vh 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.911);
+
+  nav {
+    display: flex;
+    align-items: center;
+    h1 {
+      margin: 0 3vw;
+    }
+    * {
+      margin: 0 .5vw;
+    }
+  }
+}
+
+main {
+  margin: 0;
+  padding: 6vh 11vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgba(243, 252, 241, 0.884), rgba(0, 0, 0, 0.089)), url("../assets/images/bg-leaves.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hero {
+  margin: 0;
+  padding: 11vh 11vw;
+  width: 100%;
+  border-radius: 3vh;
+  background-color: rgba(0, 0, 0, 0.534);
+  color: white;
+  text-align: center;
+
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 6vh 0 11vh 0;
+    font-size: 1.1rem;
+  }
+}
+
+.Works {
+  .projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .project {
+      padding: 6vh 0;
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.541);
+      border-radius: 3vh;
+      &__title {
+        margin-bottom: 6vh;
+      }
+      &__picture {
+        margin-bottom: 3vh;
+      }
+      &__description {
+        text-align: center;
+      }
+
+      button {
+        margin: 3vh 0;
+      }
+    }
+  }
+}
+
+button {
+  padding: 1vh 3vw;
+}
