@@ -13,7 +13,7 @@ const StudyCase = () => {
             PROJET {project.clientName.toUpperCase()}
           </div>
           <div className='project__picture'>
-            <img src={`../${project.pictureUrl}`} alt="project picture" />
+            <img src={`../React-Agency/${project.pictureUrl}`} alt="project picture" />
           </div>
           <div className='project__description'>
             {project.title}
