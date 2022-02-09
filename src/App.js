@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import About from './pages/About';
 import Works from './pages/Works';
 import Navbar from './components/Navbar';
-import CaseStudies from './components/StudyCases';
+import StudyCase from './components/StudyCase';
 import ThemeContext from './contexts/ThemeContext';
 
 
@@ -22,7 +23,7 @@ const App = () => {
           <Route path='/' element={ <Home /> } />
           <Route path='/about' element={ <About /> } />
           <Route path='/works' element={ <Works /> } />
-          <Route path='/works/study-cases/:client' element={ <CaseStudies /> } />
+          <Route path='/works/:client-study-case' element={ <StudyCase /> } />
         </Routes>
       </Router>
 
