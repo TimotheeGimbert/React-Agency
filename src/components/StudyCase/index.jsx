@@ -4,25 +4,27 @@ import Projects from '../../assets/projects.json';
 
 const StudyCase = () => {
   const {client} = useParams();
-
+  const project = Projects[client];
   return (
-    <div className='project'>
-      <div className='project__name'>
-        PROJET {client.toUpperCase()}
-      </div>
-      <div className='project__picture'>
-        <img src="" alt="project picture" />
-      </div>
-      <div className='project__title'>
-        {Projects[client].title}
-      </div>
-      <div className='project__content'>
-        {Projects[client].content}
-      </div>
-    </div>
+    <main>
+      <section className='hero'>
+        <div className='project project-solo'>
+          <div className='project__title'>
+            PROJET {project.clientName.toUpperCase()}
+          </div>
+          <div className='project__picture'>
+            <img src={`../${project.pictureUrl}`} alt="project picture" />
+          </div>
+          <div className='project__description'>
+            {project.title}
+          </div>
+          <div className='project__content'>
+            {project.content}
+          </div>
+        </div>
+      </section>
+    </main>
   )
 };
-
-
 
 export default StudyCase;
