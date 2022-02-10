@@ -1,12 +1,10 @@
-import React, { useContext } from 'react';
-import ThemeContext from '../../contexts/ThemeContext';
+import React from 'react';
 
 const About = () => {
-  const darkTheme = useContext(ThemeContext);
 
   return (
     <main>
-      <div className={darkTheme.darkTheme ? "hero dark" : "hero light"}>
+      <div className='hero'>
         <h2>Websitic, agence de communication digitale basée à Paris, accompagne vos projets digitaux</h2>
         <p>
             De l’étape d’avant projet web au lancement effectif du site, nous somme là pour vous. Tout au long de la durée de vie de nos projets communs, 

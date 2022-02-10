@@ -17,15 +17,16 @@ const App = () => {
       toggleTheme: () => setDarkTheme(darkTheme => !darkTheme)
     }}>
 
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={ <Home /> } />
-          <Route path='/React-Agency/' element={ <Home /> } />
-          <Route path='/about' element={ <About /> } />
-          <Route path='/works' element={ <Works /> } />
-          <Route path='/works/:client-study-case' element={ <StudyCase /> } />
-        </Routes>
+      <Router basename="/React-Agency">
+        <div className={darkTheme ? "App theme--dark" : "App"}>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={ <Home /> } />
+            <Route path='/about' element={ <About /> } />
+            <Route path='/works' element={ <Works /> } />
+            <Route path='/works/:client-study-case' element={ <StudyCase /> } />
+          </Routes>
+        </div>
       </Router>
 
     </ThemeContext.Provider>

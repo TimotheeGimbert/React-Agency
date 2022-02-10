@@ -1,13 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import ThemeContext from '../../contexts/ThemeContext';
 
 const Home = () => {
-  const darkTheme = useContext(ThemeContext);
 
   return (
     <main>
-      <div className={darkTheme.darkTheme ? "hero dark" : "hero light"}>
+      <div className='hero'>
         <h1>Confiez vos rêves à des experts du Web</h1>
         <p>
           Grâce à notre savoir-faire, notre expérience et notre écoute, nous accompagnons nos clients 

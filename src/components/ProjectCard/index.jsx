@@ -1,19 +1,17 @@
 /* eslint-disable react/prop-types */
-import React, {useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import ThemeContext from '../../contexts/ThemeContext';
 
 const ProjectCard = (props) => {
-  const darkTheme = useContext(ThemeContext);
   const project = props.project;
   
   return (
-    <div className={darkTheme.darkTheme ? "project dark" : "project light"}>
+    <div className='project'>
       <div className='project__title'>
         PROJET {project.clientName.toUpperCase()}
       </div>
       <div className='project__picture'>
-        <img src={`React-Agency/${project.pictureUrl}`} alt="project picture" />
+        <img src={`${project.pictureUrl}`} alt="project picture" />
       </div>
       <div className='project__description'>
         {project.title}
