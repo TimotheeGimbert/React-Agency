@@ -6,8 +6,8 @@ const Navbar = () => {
   const darkTheme = useContext(ThemeContext);
 
   return (
-    <header>
-      <nav className={darkTheme.darkTheme ? "dark" : "light"}>
+    <header className={darkTheme.darkTheme ? "dark" : "light"}>
+      <nav>
         <h1>WebSitic Agency</h1>
         <Link to='/'>Accueil</Link> <br/>
         <Link to='/about'>Agence</Link> <br/>

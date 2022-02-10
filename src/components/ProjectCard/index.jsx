@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, {useContext } from 'react';
 import { Link } from 'react-router-dom';
+import ThemeContext from '../../contexts/ThemeContext';
 
 const ProjectCard = (props) => {
+  const darkTheme = useContext(ThemeContext);
   const project = props.project;
+  
   return (
-    <div className='project'>
+    <div className={darkTheme.darkTheme ? "project dark" : "project light"}>
       <div className='project__title'>
         PROJET {project.clientName.toUpperCase()}
       </div>
