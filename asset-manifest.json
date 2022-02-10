@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/React-Agency/static/css/main.5ae13626.css",
-    "main.js": "/React-Agency/static/js/main.24bbb127.js",
+    "main.js": "/React-Agency/static/js/main.44aa7888.js",
     "static/media/bg-leaves.jpg": "/React-Agency/static/media/bg-leaves.2f178e521058f038cd45.jpg",
     "index.html": "/React-Agency/index.html",
     "main.5ae13626.css.map": "/React-Agency/static/css/main.5ae13626.css.map",
-    "main.24bbb127.js.map": "/React-Agency/static/js/main.24bbb127.js.map"
+    "main.44aa7888.js.map": "/React-Agency/static/js/main.44aa7888.js.map"
   },
   "entrypoints": [
     "static/css/main.5ae13626.css",
-    "static/js/main.24bbb127.js"
+    "static/js/main.44aa7888.js"
   ]
 }
